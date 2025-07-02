@@ -1,0 +1,1148 @@
+{
+	"name": "Unified Google Security Detections (SCC & SecOps)",
+	"versions": {
+		"attack": "16",
+		"navigator": "5.1.1",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "A unified and merged view of detections from Google Security Command Center (SCC) and Google SecOps Curated Detections, mapped to the MITRE ATT&CK framework.",
+	"filters": {
+		"platforms": [
+			"IaaS",
+			"SaaS",
+			"Linux",
+			"Windows",
+			"Google Workspace",
+			"Containers"
+		]
+	},
+	"sorting": 2,
+	"layout": {
+		"layout": "side",
+		"showID": false,
+		"showName": true
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1190",
+			"tactic": "initial-access",
+			"color": "#a1d99b",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Active Scan: Log4j Vulnerable to RCE",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Base64 Encoded Cloud SQL Command",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Cloud SQL Ransom"
+				},
+				{
+					"name": "GKE Anonymous Data Access Event from the Internet",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Weakened Config"
+				},
+				{
+					"name": "GKE Anonymous Resource Creation from the Internet",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Weakened Config"
+				},
+				{
+					"name": "MOVEit Transfer Payload Upload",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Suspicious File Creation in MOVEit Transfer WWWRoot Directory",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Ivanti EPMM (CVE-2023-35082) Exploitation Attempt",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Ivanti EPMM (CVE-2023-35078) Exploitation Attempt",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Possible ScreenConnect Authentication Bypass Exploitation",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Jetbrains TeamCity Authentication Bypass - CVE-2024-27199",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Ivanti Sentry File Upload Vulnerability",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Jetbrains TeamCity Authentication Bypass - CVE-2024-27198",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Ivanti EPMM (CVE-2023-35081) Exploitation Attempt",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1110.001",
+			"tactic": "credential-access",
+			"color": "#ffb3b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Brute force SSH",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Excessive Failed Logins By Principal Device IP and Target User ID",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by Device"
+				},
+				{
+					"name": "Excessive Failed Logins By Device MAC Address",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by Device"
+				},
+				{
+					"name": "Anomalous Auth Attempts Total by Principal Hostname and Target User ID",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by Device"
+				},
+				{
+					"name": "Excessive Failed Logins By Device Hostname",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by Device"
+				},
+				{
+					"name": "Excessive Failed Logins By Principal Device Hostname and Target User ID",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by Device"
+				},
+				{
+					"name": "Excessive Failed Logins By Device IP Address",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by Device"
+				},
+				{
+					"name": "Excessive Failed Logins By Principal Device MAC and Target User ID",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by Device"
+				},
+				{
+					"name": "Excessive Failed Logins by User Product Object ID and Target Application",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by User"
+				},
+				{
+					"name": "Excessive Failed Logins by Windows SID and Target Application",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by User"
+				},
+				{
+					"name": "Excessive Failed Logins by User ID and Target Application",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by User"
+				},
+				{
+					"name": "Excessive Failed Logins by Employee ID and Target Application",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by User"
+				},
+				{
+					"name": "Excessive Failed Logins by User Email Address and Target Application",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Failed Authentications by User"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1071.004",
+			"tactic": "command-and-control",
+			"color": "#b3d9ff",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Command and Control: DNS Tunneling",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "DNS Tunneling Using MX",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Potential Exfil Activity"
+				},
+				{
+					"name": "DNS Tunneling Using CNAME",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Potential Exfil Activity"
+				},
+				{
+					"name": "GCP DNS Tunneling - SRV",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Potential Exfil Activity"
+				},
+				{
+					"name": "DNS Tunneling Using PRIVATE Queries",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Potential Exfil Activity"
+				},
+				{
+					"name": "GCP DNS Tunneling lodine handshake",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Potential Exfil Activity"
+				},
+				{
+					"name": "GCP DNS Tunneling - NULL",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Potential Exfil Activity"
+				},
+				{
+					"name": "DNS Tunneling Using TXT",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Potential Exfil Activity"
+				},
+				{
+					"name": "DNS Tunneling Using NetBIOS Encoded Data",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "DNS Tunneling Using base32 Encoded Data",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "DNS Tunneling Using Hex Encoded Data",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "defense-evasion",
+			"color": "#ffffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Credential Access: CloudDB Failed login from Anonymizing Proxy IP",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Privilege Escalation: Anomalous IAM Grant",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Privilege Escalation: Bucket IAM Abuse",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Initial Access: Government Based Attack",
+					"value": "Source: SCC\nInternal Name: GSUITE_GOVERNMENT_BACKED_ATTACK"
+				},
+				{
+					"name": "Initial Access: Log4j Compromise Attempt",
+					"value": "Source: SCC\nInternal Name: LOG4J_COMPROMISE_ATTEMPT"
+				},
+				{
+					"name": "SCC: Initial Access: Disabled Password Leak",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Initial Access"
+				},
+				{
+					"name": "SCC: Initial Access: Account Disabled Hijacked",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Initial Access"
+				},
+				{
+					"name": "SCC: Initial Access: Suspicious Login Blocked",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Initial Access"
+				},
+				{
+					"name": "SCC: Initial Access: Government Based Attack",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Initial Access"
+				},
+				{
+					"name": "Compute Engine Default Account Accessing Serverless Resources",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Serverless Threats"
+				},
+				{
+					"name": "New Login Location Observed for an Admin User",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Suspicious Workspace Administrative Actions"
+				},
+				{
+					"name": "Rare Login to Application by User Logging in from Multiple Locations",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Suspicious Workspace Administrative Actions"
+				},
+				{
+					"name": "Infrequent Login Followed by Malware",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Alert Prioritization for Endpoints"
+				},
+				{
+					"name": "Successful SU to Root",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Privilege Modifications"
+				},
+				{
+					"name": "First Time User Login Activity from Country for Manager Peer Group",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Peer group-based detections"
+				},
+				{
+					"name": "First Time User Login Activity to Application for Manager Peer Group",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Peer group-based detections"
+				},
+				{
+					"name": "Excessive Total Logins to Application by Newly Created User ID",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Peer group-based detections"
+				},
+				{
+					"name": "Excessive Blocked Network Events for Newly Created User",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Peer group-based detections"
+				},
+				{
+					"name": "Excessive Failed Attempts to Add Newly Created User to a Group",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Peer group-based detections"
+				},
+				{
+					"name": "Excessive Suspicious Process Launch Events by Newly Created User",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Peer group-based detections"
+				},
+				{
+					"name": "Excessive Blocked Process Launch Events for Newly Created User",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Peer group-based detections"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1528",
+			"tactic": "credential-access",
+			"color": "#ffb3b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Credential Access: Failed Attempt to Approve Kubernetes Certificate Signing Request (CSR)",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Credential Access: Manually Approved Kubernetes Certificate Signing Request (CSR)",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Credential Access: Secrets Accessed In Kubernetes Namespace",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Secrets Accessed in Kubernetes Namespace",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Kubernetes Suspicious Tools"
+				},
+				{
+					"name": "Access Token Generation with signJWT",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: IAM Abuse"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1562.001",
+			"tactic": "defense-evasion",
+			"color": "#ffffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Defense Evasion: Anonymous Sessions Granted Cluster Admin Access",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Defense Evasion: Breakglass Workload Deployment Created",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Suspicious Modification for Default ClusterRole Namespace",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Kubernetes RBAC Abuse"
+				},
+				{
+					"name": "Atera Agent remote access tool call back",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: RAT (Remote Access Trojan)"
+				},
+				{
+					"name": "Windows AMSI provider deletion",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Security Posture Downgrade"
+				},
+				{
+					"name": "Nsudo Disabling Windows Tools",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Security Posture Downgrade"
+				},
+				{
+					"name": "Dism.exe Windows Defense Disabling",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Security Posture Downgrade"
+				},
+				{
+					"name": "WMIC Uninstall Security Tooling",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Security Posture Downgrade"
+				},
+				{
+					"name": "SC Disable Monitoring Services",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Security Posture Downgrade"
+				},
+				{
+					"name": "Windows Defender Disabling via SC",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Windows Defender Suppression",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1041",
+			"tactic": "exfiltration",
+			"color": "#cce6ff",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Exfiltration: BigQuery Data Exfiltration",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "MOVEit Transfer Data Exfiltration",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "PLAYFULPUG Use of Webhook C2",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"color": "#ffd6b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Persistence: IAM Unusual Grant",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Account Creations Observed after a Successful Suspicious Login",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Potential Workspace Account Compromise"
+				},
+				{
+					"name": "Excessive Account Creation by Device",
+					"value": "Source: Google SecOps\nRule Pack: Risk Analytics for UEBA\nRule Set: Suspicious actions"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "persistence",
+			"color": "#ffd6b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Persistence: New Well-Known Credentials Added",
+					"value": "Source: SCC\nDetection Service: Event Threat Detection"
+				},
+				{
+					"name": "Persistence: Add Sensitive Role",
+					"value": "Source: SCC\nDetection Service: Sensitive Actions"
+				},
+				{
+					"name": "SCC: Persistence: SSO Enablement Toggle",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Persistence"
+				},
+				{
+					"name": "SCC: Persistence: Add Sensitive Role",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Persistence"
+				},
+				{
+					"name": "SCC: Persistence: SSO Settings Changed",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Persistence"
+				},
+				{
+					"name": "SCC: Impair Defenses: Two Step Verification Disabled",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Impair Defenses"
+				},
+				{
+					"name": "SCC: Impair Defenses: Strong Authentication Disabled",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Impair Defenses"
+				},
+				{
+					"name": "Root Password Change",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Privilege Modifications"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1578",
+			"tactic": "defense-evasion",
+			"color": "#ffffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Defense Evasion: Remove Billing Admin",
+					"value": "Source: SCC\nDetection Service: Sensitive Actions"
+				},
+				{
+					"name": "SCC: Defense Evasion: Remove Billing Admin",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Defense Evasion"
+				},
+				{
+					"name": "Replacement of Existing Compute Disk",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Suspicious Infrastructure Change"
+				},
+				{
+					"name": "Replacement of Existing Compute Machine Image",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Suspicious Infrastructure Change"
+				},
+				{
+					"name": "Replacement of Existing Compute Image",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Suspicious Infrastructure Change"
+				},
+				{
+					"name": "Replacement of Existing Compute Snapshot",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Suspicious Infrastructure Change"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1485",
+			"tactic": "impact",
+			"color": "#ffb3b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Impact: Many Instances Deleted",
+					"value": "Source: SCC\nDetection Service: Sensitive Actions"
+				},
+				{
+					"name": "SCC: Data Destruction: Google Cloud Backup and DR expire image",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Data Destruction"
+				},
+				{
+					"name": "SCC: Data Destruction: Google Cloud Backup and DR expire all images",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Data Destruction"
+				},
+				{
+					"name": "SCC: Data Destruction: Google Cloud Backup and DR remove appliance",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Data Destruction"
+				},
+				{
+					"name": "SCC: Impact: Many Instances Deleted",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Impact"
+				},
+				{
+					"name": "GCP Secret Manager Mass Deletion",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Service Disruption"
+				},
+				{
+					"name": "Azov Persistence with Administrative Privileges",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Ransomware"
+				},
+				{
+					"name": "Detects Azov File Wiper Activity",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Ransomware"
+				},
+				{
+					"name": "GREASYPIZZA Backdoor Command Line",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "ELEMENTAL Configuration File Creation",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "SUPERSPEED DNS Command and Control Network Activity",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "BABYWIPER File Erasure",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats (Preview)"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "persistence",
+			"color": "#ffd6b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Add Sensitive Role",
+					"value": "Source: SCC\nDetection Service: Sensitive Actions"
+				},
+				{
+					"name": "Persistence: GCE Admin Added Startup Script",
+					"value": "Source: SCC\nInternal Name: GCE_ADMIN_ADD_STARTUP_SCRIPT"
+				},
+				{
+					"name": "Windows Service - World Writable Folders",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Recurring Malware on Same Host",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Alert Prioritization for Endpoints"
+				},
+				{
+					"name": "Recurring Unique Malware On Same Host",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Alert Prioritization for Endpoints"
+				},
+				{
+					"name": "Non Remediated Malware",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Alert Prioritization for Endpoints"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1098.004",
+			"tactic": "persistence",
+			"color": "#ffd6b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Set Service Account as Admin",
+					"value": "Source: SCC\nDetection Service: Sensitive Actions"
+				},
+				{
+					"name": "Persistence: GCE Admin Added SSH Key",
+					"value": "Source: SCC\nInternal Name: GCE_ADMIN_ADD_SSH_KEY"
+				},
+				{
+					"name": "SCC: Persistence: Project SSH Key Added",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Persistence"
+				},
+				{
+					"name": "SCC: Persistence: New Geography",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Persistence"
+				},
+				{
+					"name": "SCC: Persistence: GCE Admin Added SSH Key",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Persistence"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1106",
+			"tactic": "execution",
+			"color": "#b3ffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Execution: Added Malicious Binary Executed",
+					"value": "Source: SCC\nDetection Service: Cloud Run Threat Detection"
+				},
+				{
+					"name": "Execution: Built in Malicious Binary Executed",
+					"value": "Source: SCC\nDetection Service: Cloud Run Threat Detection"
+				},
+				{
+					"name": "Added Binary Executed",
+					"value": "Source: SCC\nInternal Name: KTD"
+				},
+				{
+					"name": "SCC: Malicious Script Executed",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Malware"
+				},
+				{
+					"name": "SCC: Malicious URL Observed",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Malware"
+				},
+				{
+					"name": "SCC: Execution: Built in Malicious Binary Executed",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Execution"
+				},
+				{
+					"name": "LgoogLoader Payload Execution",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Initial Access"
+				},
+				{
+					"name": "SNOWLIGHT Downloaded Payload Execution",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats (Preview)"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "execution",
+			"color": "#b3ffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Execution: Added Malicious Library Loaded",
+					"value": "Source: SCC\nDetection Service: Cloud Run Threat Detection"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1611",
+			"tactic": "privilege-escalation",
+			"color": "#ffb3b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Execution: Container Escape",
+					"value": "Source: SCC\nDetection Service: Cloud Run Threat Detection"
+				},
+				{
+					"name": "Suspicious Stdout or Stderr from a Kubernetes Container",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Kubernetes Suspicious Tools"
+				},
+				{
+					"name": "Suspicious GKE Container Names - Exploitation and Escape",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Kubernetes Suspicious Tools"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "command-and-control",
+			"color": "#b3d9ff",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Execution: Kubernetes Attack Tool Execution",
+					"value": "Source: SCC\nDetection Service: Cloud Run Threat Detection"
+				},
+				{
+					"name": "Added Binary Executed",
+					"value": "Source: SCC\nInternal Name: KTD"
+				},
+				{
+					"name": "Added Library Loaded",
+					"value": "Source: SCC\nInternal Name: KTD"
+				},
+				{
+					"name": "Malicious Script Executed",
+					"value": "Source: SCC\nInternal Name: KTD"
+				},
+				{
+					"name": "SCC: Added Library Loaded",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Malware"
+				},
+				{
+					"name": "SCC: Execution: Modified Malicious Binary Executed",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Execution"
+				},
+				{
+					"name": "SCC: Execution: Added Malicious Library Loaded",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Execution"
+				},
+				{
+					"name": "SCC: Execution: Added Malicious Binary Executed",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Execution"
+				},
+				{
+					"name": "SCC: Execution: Modified Malicious Library Loaded",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Execution"
+				},
+				{
+					"name": "Trickbot Module Created",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Info Stealer"
+				},
+				{
+					"name": "Cmd132 Arbitrary Download",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Living off the Land (LotL) Binaries"
+				},
+				{
+					"name": "Unexpected Finger.exe Process",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Living off the Land (LotL) Binaries"
+				},
+				{
+					"name": "Diskshadow.exe LOLBIN",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Living off the Land (LotL) Binaries"
+				},
+				{
+					"name": "Replace Usage to Add Files",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Living off the Land (LotL) Binaries"
+				},
+				{
+					"name": "NUMOZYLOD Downloader",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Suspicious Wget Usage Downloading to Tmp",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious Download Activity"
+				},
+				{
+					"name": "Curl Downloading Suspicious Script",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious Download Activity"
+				},
+				{
+					"name": "Suspicious Bash Networking",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious Download Activity"
+				},
+				{
+					"name": "Suspicious Curl from Ngrok",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious Download Activity"
+				},
+				{
+					"name": "Suspicious Curl for Drupal Exploits",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious Download Activity"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1082",
+			"tactic": "discovery",
+			"color": "#ccffcc",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Execution: Local Reconnaissance Tool Execution",
+					"value": "Source: SCC\nDetection Service: Cloud Run Threat Detection"
+				},
+				{
+					"name": "NOTESTORY Dataminer Network Activity",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats"
+				},
+				{
+					"name": "Suspicious Awk Usage",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious LOTL Binary Activity"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1071",
+			"tactic": "command-and-control",
+			"color": "#b3d9ff",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Persistence: Reverse Shell",
+					"value": "Source: SCC\nDetection Service: Container Threat Detection"
+				},
+				{
+					"name": "Fake Updates-related Wscript Execution and Network Connection",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Initial Access"
+				},
+				{
+					"name": "Sliver C2 HTTP Activity",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: RAT (Remote Access Trojan)"
+				},
+				{
+					"name": "Sliver C2 HTTP Comms",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: RAT (Remote Access Trojan)"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"color": "#b3ffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Execution: Malicious Script Executed",
+					"value": "Source: SCC\nDetection Service: Container Threat Detection"
+				},
+				{
+					"name": "Execution: Offensive Security Distro Activity",
+					"value": "Source: SCC\nDetection Service: VM Threat Detection"
+				},
+				{
+					"name": "Reverse Shell",
+					"value": "Source: SCC\nInternal Name: KTD"
+				},
+				{
+					"name": "Malicious Script Executed",
+					"value": "Source: SCC\nInternal Name: KTD"
+				},
+				{
+					"name": "SCC: Unexpected Child Shell",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Malware"
+				},
+				{
+					"name": "SCC: Reverse Shell",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Malware"
+				},
+				{
+					"name": "Kubernetes Pod Creation with Potential Reverse Shell Arguments",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Compute Engine Default Account Creating Compute Resources",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Serverless Threats"
+				},
+				{
+					"name": "Encoded PowerShell - Internal Signature Match",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Anomalous PowerShell"
+				},
+				{
+					"name": "PowerShell Obfuscation Technique: get-random",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Anomalous PowerShell"
+				},
+				{
+					"name": "IEX Cmdlet obfuscation using PowerShell",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Anomalous PowerShell"
+				},
+				{
+					"name": "Obfuscated or unusual PowerShell Invocation.",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Anomalous PowerShell"
+				},
+				{
+					"name": "PowerShell Multiple Obfuscation Techniques",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Anomalous PowerShell"
+				},
+				{
+					"name": "PowerShell Obfuscation Technique: Bitwise XOR",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Anomalous PowerShell"
+				},
+				{
+					"name": "Powersploit Tooling",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Hacktool"
+				},
+				{
+					"name": "SolarMarker Activation",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Initial Access"
+				},
+				{
+					"name": "Emotet Hexadecimal Formatted IP C2",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Initial Access"
+				},
+				{
+					"name": "Powershell Empire stager launch",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: RAT (Remote Access Trojan)"
+				},
+				{
+					"name": "Powershell Obfuscation Technique: Bitwise XOR",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Powershell Execution with Encoded Commands or Execution Policy Variants",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Powershell Obfuscation Technique: Double-Base64 Encoding",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "MSDT Spawn",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Powershell WebClient and Download",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Powershell Spawn from Excel",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Powershell fetch-and-execute",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "PowerSploit Get Data Info",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Unusual Powershell Command Usage for Host",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Alert Prioritization for Endpoints"
+				},
+				{
+					"name": "Client Apps Running Scripts",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Alert Prioritization for Endpoints"
+				},
+				{
+					"name": "Command Line PHP Eval Usage",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious Execution"
+				},
+				{
+					"name": "Suspicious Base64 Execution",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious Execution"
+				},
+				{
+					"name": "SEASPY Backdoor Execution",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats (E+ Only)\nRule Set: Mandiant Intel Emerging Threats (Preview)"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1496",
+			"tactic": "impact",
+			"color": "#ffb3b3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Execution: Cryptocurrency Mining YARA Rule",
+					"value": "Source: SCC\nDetection Service: VM Threat Detection"
+				},
+				{
+					"name": "Execution: Cryptocurrency Mining Hash Match",
+					"value": "Source: SCC\nDetection Service: VM Threat Detection"
+				},
+				{
+					"name": "SCC: Malware: Cryptomining Bad IP with Added Context",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Malware"
+				},
+				{
+					"name": "SCC: Execution: Cryptocurrency Mining YARA Rule",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Execution"
+				},
+				{
+					"name": "SCC: Impact: Many Instances Created",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Impact"
+				},
+				{
+					"name": "SCC: Impact: GPU Instance Created",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Impact"
+				},
+				{
+					"name": "Suspicious Kubernetes Container Names - Coin Mining",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Kubernetes Suspicious Tools"
+				},
+				{
+					"name": "Potential Cryptomining commands passed to Cloud Run Jobs during execution",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Serverless Threats"
+				},
+				{
+					"name": "Potential Cryptomining Payload running in Cloud Run Service or in Cloud Run Job",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Serverless Threats"
+				},
+				{
+					"name": "Managed Instance Group Autoscaling Increased to Maximum",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Suspicious Behavior"
+				},
+				{
+					"name": "Coinminer Argument Usage",
+					"value": "Source: Google SecOps\nRule Pack: Linux Threats\nRule Set: Malware Signals - Suspicious Execution"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1014",
+			"tactic": "defense-evasion",
+			"color": "#ffffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Defense Evasion: Kernel-mode Rootkit",
+					"value": "Source: SCC\nDetection Service: VM Threat Detection"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1613",
+			"tactic": "discovery",
+			"color": "#ccffcc",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Discovery: Can get sensitive Kubernetes object check",
+					"value": "Source: SCC\nInternal Name: GKE_CONTROL_PLANE_CAN_GET_SENSITIVE_OBJECT"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1129",
+			"tactic": "execution",
+			"color": "#b3ffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Added Library Loaded",
+					"value": "Source: SCC\nInternal Name: KTD"
+				},
+				{
+					"name": "Hancitor CobaltStrike Deploy",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Initial Access"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1562",
+			"tactic": "defense-evasion",
+			"color": "#ffffb3",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Defense Evasion: Organization Policy Changed",
+					"value": "Source: SCC\nDetection Service: Sensitive Actions"
+				},
+				{
+					"name": "SCC: Defense Evasion: Organization Policy Changed",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Defense Evasion"
+				},
+				{
+					"name": "LemonDuck Download",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Crypto Activity"
+				},
+				{
+					"name": "LemonDuck Execution",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats\nRule Set: Crypto Activity"
+				},
+				{
+					"name": "Reg.exe Enabling RDP Restricted Admin Mode",
+					"value": "Source: Google SecOps\nRule Pack: Microsoft Windows Threats (E+ Only)\nRule Set: Mandiant Frontline"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1069.003",
+			"tactic": "discovery",
+			"color": "#ccffcc",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Discovery: Service Account Self-Investigation",
+					"value": "Source: SCC\nInternal Name: SERVICE_ACCOUNT_SELF_INVESTIGATION"
+				},
+				{
+					"name": "SCC: Discovery: Can get sensitive Kubernetes object check",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Discovery"
+				},
+				{
+					"name": "SCC: Discovery: Service Account Self-Investigation with Resource Creation",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Discovery"
+				},
+				{
+					"name": "SCC: Discovery: Service Account Self-Investigation",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Discovery"
+				}
+			]
+		},
+		{
+			"techniqueID": "T1567",
+			"tactic": "exfiltration",
+			"color": "#cce6ff",
+			"comment": "",
+			"enabled": true,
+			"metadata": [
+				{
+					"name": "Exfiltration: CloudSQL Over-Privileged Grant",
+					"value": "Source: SCC\nInternal Name: CLOUDSQL_EXFIL_USER_GRANTED_ALL_PERMISSIONS"
+				},
+				{
+					"name": "SCC: Exfiltration: CloudSQL Over-Privileged Grant with Publicly Accessible Database",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Cloud Platform\nRule Set: Enhanced Exfiltration"
+				},
+				{
+					"name": "Google Drive File Share Actions Observed after a Successful Suspicious Login",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Potential Insider Data Exfiltration from Drive"
+				},
+				{
+					"name": "Workspace: File Shared Externally or Publicly by user of a potentially High Risk Organization",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Potential Insider Data Exfiltration from Drive"
+				},
+				{
+					"name": "Workspace: Sensitive File Share to a Freemail Account",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Potential Insider Data Exfiltration from Drive"
+				},
+				{
+					"name": "Sensitive Drive File Shared Externally or Access Given to an External User",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Potential Insider Data Exfiltration from Drive"
+				},
+				{
+					"name": "Google Drive File with Sensitive Label Shared Publicly",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Potential Insider Data Exfiltration from Drive"
+				},
+				{
+					"name": "Google Drive File Shared to a User Owning a Rooted/Jailbroken Mobile Device",
+					"value": "Source: Google SecOps\nRule Pack: Cloud Threats - Google Workspace\nRule Set: Potential Workspace Account Compromise Drive"
+				}
+			]
+		}
+	]
+}
